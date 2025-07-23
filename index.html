@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuego Piedra, Papel, Tijeras</title>
+
+    <!-- Own -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Own -->
+    
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- BootStrap -->
+
+    <!-- Scripts Logic -->
+    <script>
+        function myFunction(btnmsg) {
+           // alert("Usted ha elegido el botón: " + btnmsg);
+        }
+
+    </script>
+    <!-- Scripts Logic -->
+
+</head>
+
+
+<body>
+    <!-- Zona Test -->
+    <button onclick="myFunction('viva el betis miguel y deja la chatty')">Textear el javascript</button>
+    <button onclick="aleatorio(100,1000)">Textear el aleatorio</button>
+    <!-- Zona Test -->
+
+    <div class="container">
+        <h2>JS Game</h2>
+
+          <!-- Zona De Juego -->
+        <div id="juego">
+            <h1>Juega Contra la Máquina</h1>
+            <div onclick="usuario('0');" id="piedra"></div>
+            <div onclick="usuario('1');" id="papel"></div>
+            <div onclick="usuario('2');" id="tijera"></div>
+        </div>
+        <!-- Zona De Juego -->
+    </div>
+
+    <div id="efecto" style="display:none" onclick="quitarEfecto();"></div>
+
+</body>
+</html>
